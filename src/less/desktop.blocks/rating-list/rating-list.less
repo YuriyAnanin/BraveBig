@@ -1,0 +1,91 @@
+.rating-list{
+  max-width: 900px;
+  display: none;
+
+  & *{
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #3f4551;
+  }
+
+  &.is-open{
+    display: block;
+  }
+
+  &__title-block{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  &__title-block-col-1{
+  }
+
+  &__title-block-col-2{
+    display: flex;
+  }
+
+  &__title-block-text{
+    color: #999;
+    & + &{
+      width: 120px;
+      text-align: right;
+    }
+  }
+
+  &__fighters-list{
+    margin-top: 10px;
+    list-style: none;
+    counter-reset: li;
+  }
+  &__fighters-item{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+
+    &::before{
+      content: counters(li,".")".";
+      counter-increment: li;
+      padding-right: 27px;
+    }
+  }
+  &__fighters-img{
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    flex-shrink: 0;
+  }
+  &__fighters-info{
+    margin-left: 20px;
+  }
+  &__fighters-name{
+    font-weight: 700;
+  }
+  &__fighters-prof{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #999;
+  }
+  &__fighters-specifications{
+    font-size: 14px;
+    color: #999;
+  }
+  &__fighters-quantity{
+    max-width: 120px;
+    width: 100%;
+    text-align: right;
+
+    &--rating{
+      margin-left: auto;
+    }
+  }
+}
+
+@media all and (max-width: 993px){
+  .rating-list {
+    display: none!important;
+  }
+}

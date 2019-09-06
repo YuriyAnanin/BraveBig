@@ -1,0 +1,40 @@
+.b-weekly-item {
+  color: #3f4551;
+
+  max-width: 200px;
+  display: inline-block;
+  text-align: left;
+
+  &:hover {
+    .b-weekly-item__title {
+      color: #747f95;
+    }
+  }
+}
+
+.b-weekly-item__image {
+  width: 200px;
+  height: 200px;
+
+  margin-bottom: 15px;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.b-weekly-item__title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  margin-bottom: 5px;
+
+  transition: .3s ease;
+}
+
+.b-weekly-item__date {
+  font-size: 16px;
+  max-width: 160px;
+}

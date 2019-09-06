@@ -1,0 +1,71 @@
+.b-rating-information {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 100px;
+
+  background-color: #eceff1;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    top: -70px;
+
+    width: 100%;
+    height: 70px;
+
+    background-image: url('../../assets/img/rating-information-background.png');
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+
+    bottom: -70px;
+
+    transform: rotate(180deg);
+
+    width: 100%;
+    height: 70px;
+
+    background-image: url('../../assets/img/rating-information-background.png');
+  }
+}
+
+.b-rating-information__content {
+  margin: 0;
+
+  color: #3f4551;
+  font-size: 16px;
+  text-align: center;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  min-height: 220px;
+
+  &:before {
+    content: "";
+    width: 130px;
+    height: 130px;
+    display: block;
+
+    position: absolute;
+    top: -30px;
+
+    margin: 0 auto 50px auto;
+
+    background-image: url('../../assets/img/rating-information-icon.png');
+  }
+}
+
+@media (max-width: 992px) {
+  .b-rating-information {
+    display: none;
+  }
+}

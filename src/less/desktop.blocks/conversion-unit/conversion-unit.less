@@ -1,0 +1,97 @@
+.b-conversion-unit {
+  min-height: 260px;
+  margin: 0 auto;
+  padding-left: 100px;
+
+  position: relative;
+  left: 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #eceff1;
+}
+
+.b-conversion-unit_type_gloves {
+  &:after {
+    content: '';
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+
+    width: 406px;
+    height: 301px;
+    display: block;
+
+    background-image: url('../../assets/img/gloves.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.b-conversion-unit__wrapper {
+  max-width: 450px;
+
+  position: relative;
+  top: 3px;
+
+  color: #3f4551;
+  text-align: center;
+}
+
+.b-conversion-unit__heading {
+  margin: 0 0 20px 0;
+
+  font-size: 32px;
+  font-weight: bold;
+
+  line-height: 100%;
+}
+
+.b-conversion-unit__text {
+  margin: 0 0 35px 0;
+
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.b-conversion-unit__link {
+  padding: 0 25px;
+
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .b-conversion-unit {
+    padding-left: 40px;
+  }
+
+  .b-conversion-unit_type_gloves:after {
+    right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .b-conversion-unit {
+    padding: 0;
+    justify-content: center;
+
+    left: 0;
+  }
+
+  .b-conversion-unit_type_gloves:after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-conversion-unit__heading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+
+}

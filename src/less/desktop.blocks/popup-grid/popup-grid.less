@@ -1,0 +1,75 @@
+.b-popup-grid {
+  max-width: 490px;
+  margin: 0 auto;
+
+  border-spacing: 0;
+}
+
+.b-popup-grid__row {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.b-popup-grid__title {
+  width: 190px;
+
+  color: #3f4551;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.b-popup-grid__title_vertical_baseline {
+  vertical-align: baseline;
+}
+
+.b-popup-grid__content {
+  width: 300px;
+
+  .b-input {
+    width: 100%;
+  }
+}
+
+.b-popup-grid__flex {
+  display: flex;
+  align-content: center;
+
+  &--booking{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .b-popup-grid {
+    display: block;
+    tbody {
+      width: 490px;
+    }
+  }
+
+  .b-popup__grid {
+    flex-direction: column-reverse;
+  }
+
+  .b-popup__info {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .b-popup__heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
+

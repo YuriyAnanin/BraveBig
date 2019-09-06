@@ -1,0 +1,122 @@
+.b-rating-card {
+  max-width: 200px;
+  //margin: 10px;
+
+  &:hover {
+    .b-rating-card__link {
+      color: #f28b11;
+      text-decoration: underline;
+    }
+  }
+}
+
+.b-rating-card_style_white {
+  .b-rating-card__link {
+    color: #fff;
+
+    &:hover {
+      color: #f28b11;
+    }
+  }
+
+  .b-rating-card__stats {
+    color: #fff;
+  }
+
+  .b-rating-card__information {
+    border-color: #999;
+  }
+}
+
+.b-rating-card__avatar {
+  width: 200px;
+  height: 200px;
+
+  margin-bottom: 15px;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.b-rating-card__prefix {
+  padding: 0 5px;
+
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.b-rating-card__prefix_style_veteran {
+  color: #fff;
+  background-color: #f28b11;
+}
+
+.b-rating-card__prefix_style_new {
+  color: #263238;
+  background-color: #cfd8dc;
+}
+
+.b-rating-card__prefix_style_pro {
+  color: #fff;
+  background-color: #cc3333;
+}
+
+.b-rating-card__link {
+  color: #263238;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 120%;
+
+  max-width: 50%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.b-rating-card__information {
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+
+  border-bottom: 1px solid #ccc;
+  color: #999;
+}
+
+.b-rating-card__information-item {
+  color: #999999;
+  font-size: 14px;
+
+  &:after {
+    content: "∙";
+    font-size: 14px;
+    padding: 0 5px;
+
+    position: relative;
+    top: 2px;
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.b-rating-card__stats {
+  text-align: left;
+
+  color: #263238;
+  font-size: 14px;
+  line-height: 120%;
+  .b-rating-card__stats-title {
+    min-width: 100px;
+    font-weight: normal;
+  }
+
+  .b-rating-card__stats-content {
+    font-weight: normal;
+  }
+}
+

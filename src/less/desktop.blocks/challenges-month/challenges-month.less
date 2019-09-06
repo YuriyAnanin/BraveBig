@@ -1,0 +1,70 @@
+.b-challenges-month {
+  margin: 0 auto;
+  padding: 85px 0 100px 0;
+
+  background: rgb(247,225,181);
+  background: -moz-linear-gradient(left, rgba(247,225,181,1) 0%, rgba(223,185,113,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(247,225,181,1) 0%,rgba(223,185,113,1) 100%);
+  background: linear-gradient(to right, rgba(247,225,181,1) 0%,rgba(223,185,113,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e1b5', endColorstr='#dfb971',GradientType=1 );
+}
+
+.b-challenges-month__heading {
+  position: relative;
+  height: 190px;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 193px;
+    height: 190px;
+
+    background-image: url('../..//assets/img/challenges-month-oring.png');
+  }
+}
+
+.b-challenges-month__text {
+  color: #3f4551;
+  text-align: center;
+  font-size: 24px;
+}
+
+.b-challenges-month__heading-content {
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .b-challenges-month__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-challenges-month{
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
+

@@ -1,0 +1,228 @@
+.popup{
+  position: relative;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 0 50px;
+  max-width: 590px;
+  background-color: #ebeff2;
+  background-image: url(../img/popup_bg.png);
+  background-repeat: no-repeat;
+  background-position: -2px ~'calc(100% + 60px)';
+
+  &--successfully{
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: popupMsg 6s;
+
+    .popup__successfully-wrap{
+      display: block;
+    }
+
+    .popup__successfully-wrap ~ *{
+      display: none!important;
+    }
+
+    .mfp-close{
+      display: block!important;
+    }
+  }
+
+  @keyframes popupMsg{
+    0%{
+
+    }
+  }
+
+  &__successfully-wrap{
+    display: none;
+  }
+
+  &__successfully-title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1;
+    color: #3f4551;
+    font-weight:  700;
+  }
+
+  &__successfully-text{
+    font-size: 18px;
+    margin-top: 25px;
+    color: #3f4551;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &--send-status {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1;
+    color: #3f4551;
+    font-weight:  700;
+
+    &--send-status{
+      font-size: 32px;
+    }
+
+    &--recovery{
+      padding-top: 23px;
+    }
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #3f4551;
+    line-height: 1.5;
+  }
+
+  &__form{
+    margin: 35px auto 0;
+  }
+
+  &__top-cover, &__bottom-cover{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to right, transparent 0%, transparent 60px, #ebeff2 60px,
+    #ebeff2 ~'calc(100% - 60px)', transparent ~'calc(100% - 60px)', transparent 100%);
+
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      border: 30px solid #ebeff2;
+      border-top: 30px solid transparent;
+      border-left: 30px solid transparent;
+    }
+  }
+
+  &__top-cover{
+    bottom: 100%;
+
+    &::before, &::after{
+      bottom: 0;
+    }
+
+    &::before{
+      left: 0;
+    }
+
+    &::after{
+      right: 0;
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &__bottom-cover{
+    top: 100%;
+    background-image: url(../img/popup_bg.png), linear-gradient(to right, transparent 0%, transparent 60px, #ebeff2 60px,
+    #ebeff2 ~'calc(100% - 60px)', transparent ~'calc(100% - 60px)', transparent 100%);
+    background-repeat: no-repeat;
+    background-position: -2px -276px, 0 0;
+
+    &::before, &::after{
+      top: 0;
+    }
+
+    &::before{
+      //left: 0;
+      //transform: rotateZ(270deg);
+      border: none;
+    }
+
+    &::after{
+      right: 0;
+      transform: rotateZ(180deg);
+    }
+  }
+
+  .mfp-close{
+    top: -71px;
+    right: -10px;
+    color: #ffffff;
+  }
+}
+
+@media all and (max-width: 610px) {
+  .popup {
+    .mfp-close{
+      top: -71px;
+      right: 0;
+      width: auto;
+      height: auto;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+@media all and (max-width: 570px) {
+  .popup {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(../img/popup_bg.png);
+    background-size: 200px;
+    background-position: -2px ~'calc(100% + 41.5px)';
+
+    &__top-cover, &__bottom-cover{
+      height: 30px;
+      background: linear-gradient(to right, transparent 0%, transparent 30px, #ebeff2 30px,
+      #ebeff2 ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
+
+      &::before, &::after{
+        border: 15px solid #ebeff2;
+        border-top: 15px solid transparent;
+        border-left: 15px solid transparent;
+      }
+    }
+
+    &__bottom-cover{
+      top: 100%;
+      background-image: url(../img/popup_bg.png), linear-gradient(to right, transparent 0%, transparent 30px, #ebeff2 30px,
+      #ebeff2 ~'calc(100% - 30px)', transparent ~'calc(100% - 30px)', transparent 100%);
+      background-repeat: no-repeat;
+      background-position: -2px -176px, 0 0;
+      background-size: 200px, auto;
+
+
+      &::before{
+        border: none;
+      }
+    }
+
+    .mfp-close{
+      top: -45px;
+      right: -5px;
+    }
+  }
+}
+
+@media all and (max-width: 520px) {
+  .popup{
+    padding-bottom: 15px;
+
+    &--send-status{
+      padding-bottom: 0;
+    }
+
+    &__title{
+      font-size: 32px;
+    }
+
+    &__form{
+      margin-top: 25px;
+      max-width: 300px;
+    }
+  }
+}

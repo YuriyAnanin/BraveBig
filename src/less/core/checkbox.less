@@ -1,0 +1,36 @@
+@import "./variables";
+
+.b-checkbox {}
+
+.b-checkbox__hidden {
+  display: none;
+
+  &:checked + .b-checkbox__render {
+    color: #fff;
+    //border-color: #263238;
+    background-color: #263238;
+  }
+}
+
+.b-checkbox__render {
+  color: #263238;
+  font-size: 16px;
+
+  background-color: #fff;
+  border: 1px solid #999999;
+  border-radius: 2px;
+
+  padding: 0 10px;
+  line-height: 40px;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    border-color: @accent;
+  }
+}

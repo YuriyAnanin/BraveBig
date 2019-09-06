@@ -1,0 +1,84 @@
+.b-challenges-conversion {
+  margin: 0 auto;
+  padding: 135px 0 122px 0;
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 588px;
+    height: 663px;
+    display: block;
+
+    background-image: url('../../assets/img/challenges-conversion-hand.png');
+  }
+
+  .b-container {
+    width: 1140px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.b-challenges-conversion__container {
+  max-width: 485px;
+
+  text-align: center;
+}
+
+.b-challenges-conversion__heading {
+  margin-bottom: 30px;
+}
+
+.b-challenges-conversion__text {
+  color: #b0bec5;
+  font-size: 24px;
+
+  margin: 0 0 45px 0;
+}
+
+.b-challenges-conversion__link {
+  font-size: 18px;
+
+  padding: 0 30px;
+}
+
+@media (max-width: 1200px) {
+  .b-challenges-conversion:before {
+    width: 498px;
+    height: 563px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .b-challenges-conversion:before {
+    display: none;
+  }
+
+  .b-challenges-conversion .b-container {
+    justify-content: center;
+  }
+
+  .b-challenges-conversion__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-challenges-conversion{
+    padding: 30px 0;
+  }
+}

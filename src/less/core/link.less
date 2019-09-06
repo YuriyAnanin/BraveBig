@@ -1,0 +1,19 @@
+@import "variables";
+
+.b-link {
+  outline: none;
+  text-decoration: none;
+}
+
+.b-link_style_accent {
+  color: @accent;
+
+  &:hover {
+    background: linear-gradient(to right, rgba(249, 197, 136, 0.25), rgba(249, 197, 136, 0.25) 100%) repeat-x ~'0 100% / 10px 1px';
+    color: #f7ba72;
+  }
+}
+
+.b-link_style_underline {
+  background: linear-gradient(to right, rgba(242, 139, 17, 0.25), rgba(242, 139, 17, 0.25) 100%) repeat-x ~'0 100% / 10px 1px';
+}

@@ -1,0 +1,132 @@
+.chat{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 740px;
+
+  & *{
+    box-sizing: border-box;
+    color: #3f4551;
+  }
+
+  &__block-wrapper{
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    min-height: 100%;
+  }
+
+  &__block-item{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+  }
+
+  &__date{
+    width: 100px;
+    flex-shrink: 0;
+    margin: 0;
+    color: #90a4ae;
+  }
+
+  &__wrap{
+    display: flex;
+    flex-basis: auto;
+    width: calc(100% - 100px);
+  }
+
+  &__avatar{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  &__inner{
+    margin: 0 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  &__header{
+    margin: 0;
+    font-weight: 700;
+
+    &--time{
+      font-weight: 400;
+      color: #90a4ae;
+      letter-spacing: 0.5px;
+      margin-left: 3px;
+    }
+  }
+
+  &__text{
+    margin: 10px 0 0;
+  }
+
+  &__form{
+    margin-top: 10px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__textarea{
+    height: 60px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+    border: 1px solid #90a4ae;
+  }
+
+  &__btn{
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 650px){
+  .chat{
+    &__block-item{
+      flex-direction: column;
+    }
+
+    &__date{
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+
+    &__wrap{
+      width: 100%;
+    }
+
+    &__inner{
+      margin: 0 15px 0 10px;
+      width: 100%;
+    }
+
+    &__form{
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 400px){
+  .chat{
+    &__avatar{
+      display: none;
+    }
+
+    &__inner{
+      margin: 0 15px 0 0;
+      font-size: 14px;
+    }
+  }
+}

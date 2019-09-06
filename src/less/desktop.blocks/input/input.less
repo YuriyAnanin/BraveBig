@@ -1,0 +1,67 @@
+@import "../../core/variables";
+
+.b-input {
+  position: relative;
+  height: 50px;
+
+  color: #3f4551;
+  font-size: 18px;
+  border: 1px solid #999999;
+
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+
+  background-color: #ffff;
+
+  &:focus {
+    border-color: @accent;
+  }
+
+  &.b-input_style_password {
+    padding-right: 50px;
+  }
+}
+
+.b-input-wrapper {
+  position: relative;
+
+  .b-input-wrapper__submit {
+    position: absolute;
+
+    width: 24px;
+    height: 16px;
+
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+
+    cursor: pointer;
+    outline: none;
+
+    background-color: transparent;
+    border: none;
+
+    background-image: url('../../assets/img/input-hidden.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.b-input_type_textarea {
+  padding: 10px;
+  box-sizing: border-box;
+
+  color: #3f4551;
+  font-size: 16px;
+
+  border: 1px solid #999999;
+  border-radius: 2px;
+
+  background-color: #fff;
+  outline: none;
+
+  resize: none;
+}

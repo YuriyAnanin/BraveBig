@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html class="ua_js_no">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brave - Рейтинг</title>
+    <script>(function (e, c) {
+        e[c] = e[c].replace(/(ua_js_)no/g, "$1yes");
+    })(document.documentElement, "className");
+    (function (d, n) {
+        d.documentElement.className += " ua_svg_" + (d[n] && d[n]("http://www.w3.org/2000/svg", "svg").createSVGRect ? "yes" : "no");
+    })(document, "createElementNS");</script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vendor.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="page page_theme_islands">
+
+    <header class="b-header">
+        <div class="b-container">
+            <a href="schedule.html" class="b-link b-header__logo"></a>
+            <ul class="b-header__information">
+                <li class="b-header__information-element">Тренировки</li>
+                <li class="b-header__information-element">Спарринги</li>
+                <li class="b-header__information-element">Развитие</li>
+            </ul>
+            <ul class="b-header__nav">
+                <li class="b-header__item b-header__item_active_yes">
+                    <a href="#" class="b-link b-header__link">О клубе</a>
+                </li>
+                <li class="b-header__item">
+                    <a href="#" class="b-link b-header__link">Вызовы</a>
+                </li>
+                <li class="b-header__item">
+                    <a href="#" class="b-link b-header__link">Спарринги</a>
+                </li>
+                <li class="b-header__item">
+                    <a href="#" class="b-link b-header__link">Рейтинг</a>
+                </li>
+                <li class="b-header__item">
+                    <a href="#" class="b-link b-header__link">Принципы</a>
+                </li>
+                <li class="b-header__item">
+                    <a href="#" class="b-link b-header__link">Услуги и цены</a>
+                </li>
+            </ul>
+            <div class="b-header__authorization">
+                <a href="#" class="b-link b-header__profile">
+                    <div class="b-header__icon" style="background-image: url('assets/img/usericon.png');"></div>
+                    <span class="b-header__username">Виктор Т.</span>
+                </a>
+                <a href="#" class="b-link b-header__login">Выйти</a>
+            </div>
+            <div class="b-header__mobile">
+                <button class="b-header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="b-mobile-menu">
+                    <li class="b-mobile-menu__item">
+                        <a href="#" class="b-link b-mobile-menu__link">О клубе</a>
+                    </li>
+                    <li class="b-mobile-menu__item">
+                        <a href="#" class="b-link b-mobile-menu__link">Вызовы</a>
+                    </li>
+                    <li class="b-mobile-menu__item b-mobile-menu__item_is-active_true">
+                        <a href="#" class="b-link b-mobile-menu__link">Спарринги</a>
+                    </li>
+                    <li class="b-mobile-menu__item">
+                        <a href="#" class="b-link b-mobile-menu__link">Рейтинг</a>
+                    </li>
+                    <li class="b-mobile-menu__item">
+                        <a href="#" class="b-link b-mobile-menu__link">Принципы</a>
+                    </li>
+                    <li class="b-mobile-menu__item">
+                        <a href="#" class="b-link b-mobile-menu__link">Услуги и цены</a>
+                    <li class="b-mobile-menu__item">
+                        <div class="b-header__authorization">
+                            <a href="#" class="b-link b-header__profile">
+                                <div class="b-header__icon" style="background-image: url('assets/img/usericon.png');"></div>
+                                <span class="b-header__username">Виктор Т.</span>
+                            </a>
+                            <a href="#" class="b-link b-header__login">Выйти</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="b-rating-header">
+        <div class="b-container">
+            <div class="b-rating-header__wrapper">
+                <h1 class="b-heading b-heading_style_white b-rating-header__heading">Рейтинг</h1>
+                <a href="#" class="b-link b-link_style_accent b-link_style_underline b-rating-header__link">Как начисляется рейтинг?</a>
+                <div class="b-rating-header__under-heading">
+                    <span class="b-rating-header__under-heading-text">Лучшие за месяц в</span>
+                    <div class="b-cities-list">
+                        <select class="b-cities-list__data">
+                            <option class="b-cities-list__field">Алматы</option>
+                            <option class="b-cities-list__field">Другой город</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="b-rating-header__grid">
+                    <a href="#" class="b-link b-rating-card b-rating-card_style_white">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card b-rating-card_style_white">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card b-rating-card_style_white">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card b-rating-card_style_white">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-container">
+        <div class="b-page-grid b-page-grid--rating">
+            <main class="b-page-grid__content">
+                <div class="b-page-grid__header">
+                    <h3 class="b-heading b-page-grid__heading">Рейтинг бойцов в Талдыкоргане</h3>
+                    <div class="b-page-grid__content-switch">
+                        <button class="js_rating_list-btn b-link b-button b-button_theme_fill b-page-grid__button b-page-grid__button_type_row b-button_theme_white">Списком</button>
+                        <button class="js_rating_grid-btn b-link b-button b-button_theme_fill b-button_theme_fill-empty b-page-grid__button b-page-grid__button_type_column b-button_theme_white">Плиткой</button>
+                    </div>
+                </div>
+                <div class="b-page-grid__grid-content js_rating_grid">
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                    <a href="#" class="b-link b-rating-card">
+                        <div class="b-rating-card__avatar" style="background-image: url('assets/img/rating-avatar.png');">
+                            <div class="b-rating-card__prefix b-rating-card__prefix_style_veteran">Ветеран</div>
+                        </div>
+                        <object>
+                            <a href="#" class="b-link b-rating-card__link">Нурлан Кудайбердиев</a>
+                        </object>
+                        <ul class="b-rating-card__information">
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">Предприниматель</span>
+                            </li>
+                            <li class="b-rating-card__information-row">
+                                <span class="b-rating-card__information-item">32 года</span>
+                                <span class="b-rating-card__information-item">72 кг</span>
+                                <span class="b-rating-card__information-item">180 см</span>
+                            </li>
+                        </ul>
+                        <table class="b-rating-card__stats">
+                            <tr>
+                                <th class="b-rating-card__stats-title">Рейтинг</th>
+                                <th class="b-rating-card__stats-content">154 556</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Вызовы</th>
+                                <th class="b-rating-card__stats-content">56</th>
+                            </tr>
+                            <tr>
+                                <th class="b-rating-card__stats-title">Спарринги</th>
+                                <th class="b-rating-card__stats-content">20</th>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+                <div class="b-page-grid__grid-list rating-list js_rating_list is-open">
+                    <div class="rating-list__title-block">
+                        <div class="rating-list__title-block-col-1">
+                            <p class="rating-list__title-block-text">Боец</p>
+                        </div>
+                        <div class="rating-list__title-block-col-2">
+                            <p class="rating-list__title-block-text">Рейтинг</p>
+                            <p class="rating-list__title-block-text">Спарринги</p>
+                            <p class="rating-list__title-block-text">Вызовы</p>
+                        </div>
+                    </div>
+                    <ul class="rating-list__fighters-list">
+                        <li class="rating-list__fighters-item">
+                            <img class="rating-list__fighters-img" src="" alt="fighters">
+                            <div class="rating-list__fighters-info">
+                                <p class="rating-list__fighters-name">Нурлан Кудайбергенов</p>
+                                <p class="rating-list__fighters-prof">Дизайнер</p>
+                                <p class="rating-list__fighters-specifications">32 года 72кг 180см</p>
+                            </div>
+                            <p class="rating-list__fighters-quantity rating-list__fighters-quantity--rating">242 323</p>
+                            <p class="rating-list__fighters-quantity">23</p>
+                            <p class="rating-list__fighters-quantity">132</p>
+                        </li>
+                        <li class="rating-list__fighters-item">
+                            <img class="rating-list__fighters-img" src="" alt="fighters">
+                            <div class="rating-list__fighters-info">
+                                <p class="rating-list__fighters-name">Нурлан Кудайбергенов</p>
+                                <p class="rating-list__fighters-prof">Дизайнер</p>
+                                <p class="rating-list__fighters-specifications">32 года 72кг 180см</p>
+                            </div>
+                            <p class="rating-list__fighters-quantity rating-list__fighters-quantity--rating">242 323</p>
+                            <p class="rating-list__fighters-quantity">23</p>
+                            <p class="rating-list__fighters-quantity">132</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-page-grid__load-more">
+                    <a href="#" class="b-link b-button b-button b-button_theme_fill b-button_theme_fill-empty">Загрузить еще</a>
+                </div>
+            </main>
+            <aside class="b-page-grid__sidebar">
+                <div class="b-page-filter">
+                    <h5 class="b-heading b-page-filter__heading">Выбор соперника</h5>
+                    <form class="b-page-filter__form">
+                        <div class="b-page-filter__row">
+                            <span class="b-page-filter__title">Город</span>
+                            <div class="b-select-wrap">
+                                <select class="b-select">
+                                    <option class="b-select__item">Алматы</option>
+                                    <option class="b-select__item">Другой город</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="b-page-filter__row">
+                            <span class="b-page-filter__title">Дисциплина</span>
+                            <div class="b-page-filter__tags">
+                                <div class="b-checkbox">
+                                    <input id="all" name="rating_filter" type="radio" class="b-checkbox__hidden">
+                                    <label for="all" class="b-checkbox__render">Все</label>
+                                </div>
+                                <div class="b-checkbox">
+                                    <input id="boxing" name="rating_filter" type="radio" class="b-checkbox__hidden">
+                                    <label for="boxing" class="b-checkbox__render">Бокс</label>
+                                </div>
+                                <div class="b-checkbox">
+                                    <input id="mma" name="rating_filter" type="radio" class="b-checkbox__hidden">
+                                    <label for="mma" class="b-checkbox__render">ММА</label>
+                                </div>
+                                <div class="b-checkbox">
+                                    <input id="wrestling" name="rating_filter" type="radio" class="b-checkbox__hidden">
+                                    <label for="wrestling" class="b-checkbox__render">Борьба</label>
+                                </div>
+                                <div class="b-checkbox">
+                                    <input id="steel-arms" name="rating_filter" type="radio" class="b-checkbox__hidden">
+                                    <label for="steel-arms" class="b-checkbox__render">Хол. оружие</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-page-filter__row">
+                            <span class="b-page-filter__title">Весовая категория</span>
+                            <div class="b-select-wrap">
+                                <select class="b-select">
+                                    <option class="b-select__item">Средний вес, 63-70 кг</option>
+                                    <option class="b-select__item">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="b-page-filter__row">
+                            <span class="b-page-filter__title">Опыт соперника</span>
+                            <div class="b-select-wrap">
+                                <select class="b-select">
+                                    <option class="b-select__item">Начинающий</option>
+                                    <option class="b-select__item">Про</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" value="Показать" class="b-button b-page-filter__button">
+                    </form>
+                </div>
+                <div class="b-rating-information">
+                    <p class="b-rating-information__content">Чтобы выступать на «Арене», <br />не нужно быть опытным <br />бойцом. Вы найдете соперника <br />по силам.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="b-footer">
+        <div class="b-footer__lead-wrap">
+            <p class="b-footer__lead">
+                <a href="#" class="b-link b-link_style_accent b-link_style_underline b-footer__lead-link">Пригласите друга</a> и получите скидку 20% на два абонемента.
+            </p>
+        </div>
+        <div class="b-container">
+            <div class="b-footer__wrapper">
+                <div class="b-footer__section">
+                    <span class="b-footer__header">© Мужской клуб Brave, 2018</span>
+                    <ul class="b-footer__statistics">
+                        <li class="b-footer__statistics-item">56 участников</li>
+                        <li class="b-footer__statistics-item">1 352 выполненных вызова</li>
+                        <li class="b-footer__statistics-item">252 спарринга</li>
+                    </ul>
+                </div>
+                <div class="b-footer__section">
+                    <span class="b-footer__header">Узнайте о нас больше</span>
+                    <ul class="b-footer__social">
+                        <li class="b-footer__social-item">
+                            <span class="b-icon icon-instagram"></span>
+                            <a href="#" class="b-link b-link_style_accent b-link_style_underline b-footer__social-link">Instagram</a>
+                        </li>
+                        <li class="b-footer__social-item">
+                            <span class="b-icon icon-vk"></span>
+                            <a href="#" class="b-link b-link_style_accent b-link_style_underline b-footer__social-link">ВКонтакте</a>
+                        </li>
+                        <li class="b-footer__social-item">
+                            <span class="b-icon icon-facebook"></span>
+                            <a href="#" class="b-link b-link_style_accent b-link_style_underline b-footer__social-link">Фейсбук</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-footer__section">
+                    <span class="b-footer__header">Телефон и WhatsApp для справок</span>
+                    <a href="#" class="b-link b-footer__phone">+7 (727) 123-54-67</a>
+                    <a href="#" class="b-link b-link_style_accent b-link_style_underline b-footer__franchise">Хотите открыть Brave в своем зале?</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="b-popup">
+        <div id="b-popup-register" class="b-popup__item mfp-with-anim mfp-hide">
+            <h6 class="b-heading b-popup__heading">Регистрация</h6>
+            <form class="b-popup-register__form">
+                <table class="b-popup-register__table">
+                    <tr>
+                        <th class="b-popup-register__table-title">Имя</th>
+                        <th class="b-popup-register__table-content">
+                            <input type="text" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="b-popup-register__table-title">Эл. почта</th>
+                        <th class="b-popup-register__table-content">
+                            <input type="email" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="b-popup-register__table-title">Пароль дважды</th>
+                        <th class="b-popup-register__table-content">
+                            <div class="b-input-wrapper">
+                                <input type="password" class="b-input b-input_style_password" required>
+                                <button type="button" class="b-input-wrapper__submit"></button>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="b-popup-register__table-title"></th>
+                        <th class="b-popup-register__table-content">
+                            <div class="b-input-wrapper">
+                                <input type="password" class="b-input b-input_style_password" required>
+                                <button type="button" class="b-input-wrapper__submit"></button>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+                <div class="b-popup-register__footer">
+                    <div class="b-checkbox-rules">
+                        <div class="b-checkbox-rules__wrapper">
+                            <input id="rules" type="checkbox" class="b-checkbox-rules__checkbox">
+                            <label for="rules" class="b-checkbox-rules__custom"></label>
+                        </div>
+                        <label for="rules" class="b-checkbox-rules__content">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <input type="submit" value="Создать профиль" class="b-button b-button_size_medium b-popup-register__button">
+                </div>
+                <a href="#" class="b-link b-link_style_accent b-link_style_underline b-popup-register__test">Посетить тестовый профиль</a>
+            </form>
+        </div>
+        <div id="b-popup-register-friend" class="b-popup__item mfp-with-anim mfp-hide">
+            <h6 class="b-heading b-popup__heading">Пригласить друга</h6>
+            <p class="b-popup__sub-title">Мы вышлем приглашение на указанную почту. Если друг принимает <br />приглашение, вы оба получаете скидку 20% на абонемент.</p>
+            <form class="b-popup-register-friend__form">
+                <table class="b-popup-register-friend__table">
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Ваше имя</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="text" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Ваша эл.почта</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="email" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Ваш телефон</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="text" class="b-input b-phone" placeholder="7 7" required>
+                        </th>
+                    </tr>
+                </table>
+                <table class="b-popup-register-friend__table">
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Имя друга</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="text" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Эл.почта</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="email" class="b-input" required>
+                        </th>
+                    </tr>
+                    <tr class="b-popup-register-friend__row">
+                        <th class="b-popup-register-friend__title">Номер телефон</th>
+                        <th class="b-popup-register-friend__content">
+                            <input type="text" class="b-input b-phone" placeholder="7 7" required>
+                        </th>
+                    </tr>
+                </table>
+                <input type="submit" value="Отправить заявку" class="b-button b-button_size_medium b-popup-register-friend__button">
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+.b-schedule-table__column_border_left {
+  border-left: 1px solid #cfd8dc;
+}
+
+.b-schedule-table {
+  margin: 34px auto 0 auto;
+}
+
+.b-schedule-table__wrapper {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.b-schedule-table__week {
+  color: #3f4551;
+
+  padding-bottom: 17px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-schedule-table__week-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.b-schedule-table__day {
+  font-size: 14px;
+}
+
+.b-schedule-table__row {
+  height: 40px;
+
+  &:first-child {
+    td:not(:first-child) {
+      border-top: 1px solid #cfd8dc;
+    }
+  }
+}
+
+.b-schedule-table__row_is-hover_true {
+  background-color: #f3f5f6;
+}
+
+.b-schedule-table__column {
+  position: relative;
+
+  width: 120px;
+  height: 40px;
+  box-sizing: border-box;
+
+  border-right: 1px solid #cfd8dc;
+  border-bottom: 1px solid #cfd8dc;
+  text-align: center;
+
+  color: #546e7a;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &:first-child {
+    border-left: 1px solid #cfd8dc;
+  }
+}
+
+.b-schedule-table__item {
+  width: calc(100% + 2px);
+  height: calc(100% + 4px);
+
+  position: relative;
+  left: -2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #263238;
+
+  color: #fff;
+  background-color: #455a64;
+
+  transition: .3s ease;
+  &:hover {
+    border-color: #c95304;
+    background-color: #ff8f00;
+  }
+}
+
+.b-schedule-table__column_is-hover_true {
+  background-color: #f3f5f6;
+}
+
+.b-schedule-table__time {
+  color: #546e7a;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.b-schedule-table__time_wight_bold {
+  color: #000;
+  font-weight: bold;
+}
+
+.b-schedule-table__column_state_free {
+  &:hover {
+    .b-schedule-table__booking {
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+}
+
+.b-schedule-table__booking {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  z-index: -1;
+
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  border: 1px solid #c95304;
+  background-color: #ff8f00;
+}
+
+.b-schedule-table__detail {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 5;
+
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  border: 1px solid #263238;
+  background-color: #455a64;
+
+  &:hover {
+    content: "Детали";
+    color: #333333;
+
+    background-color: #ffcc00;
+    border-color: #cc9900;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .b-schedule-table__booking {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-schedule-table__wrapper {
+    width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+
+}

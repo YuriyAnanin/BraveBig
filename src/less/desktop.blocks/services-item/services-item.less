@@ -1,0 +1,265 @@
+.b-services-item {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.b-services-item_theme_gray {
+  padding: 100px 0 70px 0;
+
+  background-color: #eceef0;
+
+  .b-services-item__price-wrap {
+    background: #fff;
+    background-image: url('../../assets/img/services-item-price-background.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.b-services-item__wrapper {
+  .b-services-item__carousel {
+    .slick-next {
+      right: auto;
+      left: 61px;
+    }
+
+    .slick-prev {
+      left: 0;
+      right: auto;
+    }
+
+    .slick-dots {
+      text-align: left;
+    }
+  }
+}
+
+.b-services-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-services-item__carousel {
+  max-width: 500px;
+
+  .slick-next, .slick-prev {
+    width: 60px;
+    height: 60px;
+
+    bottom: -25px;
+    top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000;
+    z-index: 1;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 61px;
+  }
+
+  .slick-dots {
+    text-align: right;
+    bottom: -15px;
+
+    li {
+      width: 10px;
+      height: 10px;
+
+      &.slick-active {
+        button {
+          background-color: #3f4551;
+        }
+      }
+
+      button {
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+        background-color: #b0bec5;
+
+        transition: .3s ease;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.b-services-item__content {
+  max-width: 540px;
+}
+
+.b-services-item__title {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: left;
+
+  line-height: 120%;
+
+  margin-bottom: 30px;
+}
+
+.b-services-item__meta {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.b-services-item__meta-item {
+  color: #999999;
+  font-size: 16px;
+  line-height: 1;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.b-services-item__text {
+  color: #3f4551;
+  font-size: 16px;
+
+  margin: 0 0 50px 0;
+}
+
+.b-services-item__price-wrap {
+  width: 390px;
+  height: 100px;
+
+  margin-bottom: 57px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  color: #3f4551;
+
+  background: #eceff1;
+  background-image: url('../../assets/img/services-item-price-background.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.b-services-item__price-title {
+  font-size: 18px;
+  line-height: 1
+}
+
+.b-services-item__price-grid {
+  display: flex;
+  align-items: center;
+}
+
+.b-services-item__old-price {
+  color: #f28b11;
+  font-size: 32px;
+  text-decoration: line-through;
+}
+
+.b-services-item__new-price {
+  font-size: 32px;
+  margin-left: 15px;
+
+  font-weight: bold;
+}
+
+.b-services-item__controls {
+  display: flex;
+  align-items: center;
+}
+
+.b-services-item__link {
+  font-size: 18px;
+  padding: 0 22px;
+}
+
+.b-services-item__controls-sub-text {
+  color: #3f4551;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .b-services-item__content {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 992px) {
+  .b-services-item__content {
+    max-width: 100%;
+  }
+
+  .b-services-item__wrapper {
+    flex-direction: column;
+  }
+
+  .b-services-item {
+    .b-services-item__carousel {
+      margin: 0 auto 45px auto;
+    }
+  }
+
+  .b-services-item_theme_gray {
+    .b-services-item__wrapper {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .b-services-item__carousel {
+    max-width: 100%;
+
+    .slick-slide img {
+      width: 100%;
+    }
+  }
+
+  .b-services-item__price-wrap {
+    width: 100%;
+  }
+
+  .b-services-item__controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .b-services-item__controls-sub-text {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .b-services-item__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .b-services-item__meta {
+    margin: 0 0 15px;
+  }
+
+  .b-page-description__heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+
+}

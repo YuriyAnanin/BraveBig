@@ -1,0 +1,178 @@
+@import "../../core/variables";
+
+.b-profile-statistic {
+  height: 90px;
+  margin: 0 auto;
+
+  .b-container {
+    height: 100%;
+  }
+
+  background-color: #263238;
+}
+
+.b-profile-statistic__wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.b-profile-statistic__content {
+  width: 690px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.b-profile-statistic__block {
+  color: #fff;
+  margin: auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .b-profile-statistic__heading {
+    font-size: 16px;
+    line-height: 1;
+
+    margin: 0 0 10px 0;
+    font-weight: normal;
+  }
+
+  .b-profile-statistic__count {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+.b-profile-statistic__controls {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 30px;
+}
+
+.b-profile-statistic_type_mail {
+  margin-left: 10px;
+}
+
+.b-profile-statistic_style_no-active {
+  padding: 0 20px;
+
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: normal;
+  text-transform: none;
+
+  background-color: @accent;
+
+  transition: .3s ease;
+  &:hover {
+    background-color: @accentHover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .b-profile-statistic__content {
+    width: 560px;
+  }
+
+  .b-profile-statistic__controls_width_fluid {
+    flex-direction: column;
+    justify-content: center;
+
+    .b-button {
+      width: 100%;
+      margin: 0;
+      padding: 0 5px;
+
+      line-height: 35px;
+
+      text-align: center;
+
+      &:not(:first-child) {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .b-profile-statistic__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-profile-statistic {
+    height: auto;
+    padding: 25px 0 15px 0;
+  }
+
+  .b-profile-statistic__block {
+    text-align: center;
+
+    &:first-child {
+      margin: 0 auto;
+    }
+  }
+
+  .b-profile-statistic__content {
+    flex-wrap: wrap;
+  }
+
+  .b-profile-statistic__controls {
+    width: 100%;
+    margin: 25px 0 0 0;
+  }
+
+  .b-profile-statistic_type_enter {
+    margin: 0 auto;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .b-profile-statistic_style_no-active {
+    font-size: 16px;
+    line-height: 45px;
+  }
+
+  .b-profile-statistic__controls_width_fluid {
+    .b-button {
+      line-height: 45px;
+    }
+  }
+
+  .b-profile-statistic__controls_width_fluid {
+    flex-direction: row;
+
+    .b-button {
+      &:not(:first-child) {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .b-profile-statistic__controls_width_fluid {
+    flex-direction: column;
+
+    .b-button {
+      &:not(:first-child) {
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+}

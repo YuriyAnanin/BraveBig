@@ -1,0 +1,102 @@
+@import "./variables";
+
+.b-button {
+  padding: 0 22px;
+
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  background-color: @buttonBackground;
+  outline: none;
+
+  transition: .3s ease;
+  &:hover,
+  &:focus {
+    background-color: #f5a341;
+  }
+}
+
+.b-button_size_medium {
+  display: inline-block;
+  line-height: 50px;
+}
+
+.b-button_size_small {
+  padding: 0 15px;
+  line-height: 40px;
+}
+
+.b-button_theme_black {
+  color: #fff;
+  background-color: #192226;
+
+  &:hover,
+  &:focus {
+    background-color: @accentHover;
+  }
+}
+
+.b-button_theme_border {
+  color: #3f4551;
+  font-size: 13px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  padding: 0 10px;
+
+  border: 1px solid #cccccc;
+  background-color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    border-color: #78909c;
+  }
+}
+
+.b-button_theme_fill {
+  line-height: 40px;
+  padding: 0 10px;
+
+  color: #fff;
+  font-size: 16px;
+
+  text-transform: none;
+  font-weight: normal;
+
+  border: 1px solid #263238;
+
+  background-color: #263238;
+
+  &:hover,
+  &:focus {
+    border-color: #999999;
+    background-color: #263238;
+  }
+}
+
+.b-button_theme_fill-empty {
+  color: #3f4551;
+
+  border-color: #6f737c;
+  background-color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: #000000;
+    background-color: #fff;
+  }
+}
+
+.b-button_theme_popup {
+  padding: 0 20px;
+
+  font-size: 18px;
+  text-transform: none;
+  font-weight: normal;
+}
