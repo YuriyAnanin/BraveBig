@@ -2947,6 +2947,43 @@ html {
   }
 }
 
+.b-person-progress-item {
+  max-width: 160px;
+  outline: none;
+  text-decoration: none;
+}
+.b-person-progress-item:hover .b-person-progress-item__heading {
+  color: #f28b11;
+}
+.b-person-progress-item__icon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.b-person-progress-item__heading {
+  color: #3f4551;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.15s ease;
+}
+.b-person-progress-item__meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.b-person-progress-item__meta-item {
+  color: #999999;
+  font-size: 14px;
+}
+.b-person-progress-item__meta-item_color_red {
+  color: #cc3333;
+}
+
 .popup {
   position: relative;
   box-sizing: border-box;
@@ -2957,6 +2994,30 @@ html {
   background-image: url(../img/popup_bg.png);
   background-repeat: no-repeat;
   background-position: -2px calc(100% + 60px);
+}
+.popup__text-block {
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.popup__text-block-title {
+  font-size: 18px;
+  width: 50%;
+  margin: 0;
+}
+.popup__text-block-text {
+  font-size: 18px;
+  text-align: right;
+  width: 50%;
+  margin: 3px 0;
+}
+.popup__text-block-participants {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .popup--successfully {
   height: 280px;
@@ -3134,43 +3195,6 @@ html {
     margin-top: 25px;
     max-width: 300px;
   }
-}
-
-.b-person-progress-item {
-  max-width: 160px;
-  outline: none;
-  text-decoration: none;
-}
-.b-person-progress-item:hover .b-person-progress-item__heading {
-  color: #f28b11;
-}
-.b-person-progress-item__icon {
-  width: 160px;
-  height: 160px;
-  margin-bottom: 20px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-.b-person-progress-item__heading {
-  color: #3f4551;
-  font-size: 16px;
-  line-height: 1.2;
-  display: block;
-  margin-bottom: 15px;
-  transition: 0.15s ease;
-}
-.b-person-progress-item__meta {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.b-person-progress-item__meta-item {
-  color: #999999;
-  font-size: 14px;
-}
-.b-person-progress-item__meta-item_color_red {
-  color: #cc3333;
 }
 
 .b-popup-grid {

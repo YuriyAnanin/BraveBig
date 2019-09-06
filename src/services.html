@@ -171,6 +171,7 @@
         <a style="margin-right: 10px" href="#b-popup-first-fight" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Первый вызов</a>
         <a style="margin-right: 10px" href="#offer_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Записаться</a>
         <a style="margin-right: 10px" href="#cooperation_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Открыть зал</a>
+        <a style="margin-right: 10px" href="#details_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Детали спаринга</a>
     </div>
 
     <footer class="b-footer">
@@ -215,6 +216,31 @@
         </div>
     </footer>
 
+    <!--    Popup Детали спаринга   -->
+    <div class="popup mfp-with-anim mfp-hide js_form_id" id="details_form">
+        <div class="popup__top-cover"></div>
+        <div class="popup__bottom-cover"></div>
+        <div class="popup__successfully-wrap">
+            <div class="popup__successfully-title">Заявка принята!</div>
+            <p class="popup__successfully-text">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+        <h4 class="popup__title">Детали спаринга</h4>
+        <div class="popup__text-block">
+            <p class="popup__text-block-title">Дата</p>
+            <p class="popup__text-block-text">24.09.2019</p>
+            <p class="popup__text-block-title">Время</p>
+            <p class="popup__text-block-text">18:15-18:45</p>
+            <p class="popup__text-block-title">Дисциплина</p>
+            <p class="popup__text-block-text">Бокс</p>
+            <div class="popup__text-block-participants">
+                <p class="popup__text-block-title">Участник #1</p>
+                <p class="popup__text-block-text">Иван Петров</p>
+                <p class="popup__text-block-title">Участник #2</p>
+                <p class="popup__text-block-text">Казыбек Казыбеков</p>
+            </div>
+        </div>
+    </div>
+
     <!--    Popup Открыть зал    -->
     <div class="popup mfp-with-anim mfp-hide js_form_id" id="cooperation_form">
         <div class="popup__top-cover"></div>
@@ -224,7 +250,7 @@
             <p class="popup__successfully-text">Мы свяжемся с вами в ближайшее время.</p>
         </div>
         <h4 class="popup__title">Открыть зал</h4>
-        <div class="popup__form feedback-form">
+        <form class="popup__form feedback-form">
             <div class="feedback-form__input-wrap">
                 <label for="cooperation_form_name" class="feedback-form__input-label">Ваше имя</label>
                 <div class="feedback-form__validation-wrap feedback-input">
@@ -252,7 +278,7 @@
             <div class="feedback-form__input-wrap feedback-form__input-wrap--btn">
                 <input type="submit" value="ОТПРАВИТЬ" class="feedback-form__btn button button--orange js_send_form">
             </div>
-        </div>
+        </form>
     </div>
 
     <!--    Popup ЗАПИСАТЬСЯ    -->
@@ -264,7 +290,7 @@
             <p class="popup__successfully-text">Мы свяжемся с вами в ближайшее время, чтобы подтвердить запись.</p>
         </div>
         <h4 class="popup__title">Записаться</h4>
-        <div class="popup__form feedback-form">
+        <form class="popup__form feedback-form">
             <div class="feedback-form__input-wrap">
                 <label for="call_back_name" class="feedback-form__input-label">Ваше имя</label>
                 <div class="feedback-form__validation-wrap feedback-input">
@@ -292,7 +318,7 @@
             <div class="feedback-form__input-wrap feedback-form__input-wrap--btn">
                 <input type="submit" value="ОТПРАВИТЬ" class="feedback-form__btn button button--orange js_send_form">
             </div>
-        </div>
+        </form>
     </div>
 
     <!--    Popup авторизации    -->

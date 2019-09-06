@@ -9,6 +9,34 @@
   background-repeat: no-repeat;
   background-position: -2px ~'calc(100% + 60px)';
 
+  &__text-block{
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__text-block-title{
+    font-size: 18px;
+    width: 50%;
+    margin: 0;
+  }
+
+  &__text-block-text{
+    font-size: 18px;
+    text-align: right;
+    width: 50%;
+    margin: 3px 0;
+  }
+
+  &__text-block-participants{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &--successfully{
     height: 280px;
     display: flex;
@@ -27,12 +55,6 @@
 
     .mfp-close{
       display: block!important;
-    }
-  }
-
-  @keyframes popupMsg{
-    0%{
-
     }
   }
 
