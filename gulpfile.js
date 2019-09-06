@@ -137,7 +137,9 @@ gulp.task('build', function () {
 
 gulp.task('watch', function() {
     browserSync.init({
-        proxy: "http://bravebig/"
+        server: {
+            baseDir: "./src/"
+        }
     });
     gulp.watch('./src/less/**/*.less', ['less']);
     gulp.watch('./src/less/desktop.blocks/**/*.js', ['js']);

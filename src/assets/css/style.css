@@ -191,74 +191,6 @@ html {
 }
 
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  padding: 0 25px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  border: 1px solid #f28b11;
-  border-radius: 1px;
-  background-color: #f28b11;
-  color: #ffffff;
-  user-select: none;
-  cursor: pointer;
-  text-align: center;
-  transition: 0.1s;
-}
-.button:hover,
-.button:focus {
-  border-color: #f28b11;
-  background-color: #f28b11;
-}
-.button--c-transparent {
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0.35);
-}
-.button--c-transparent:hover,
-.button--c-transparent:focus {
-  border-color: #f28b11;
-  background-color: #f28b11;
-}
-.button--white {
-  background-color: transparent;
-  border: 1px solid #90a4ae;
-  padding: 7px 15px 5px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.button--white:hover,
-.button--white:focus {
-  border-color: #f28b11;
-  background-color: #f28b11;
-}
-.button.is-disabled,
-.button:disabled {
-  background-color: #999999;
-  border-color: #656565;
-  cursor: not-allowed;
-}
-.button--small {
-  height: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-  font-weight: 400;
-}
-.button__text {
-  margin: 0 auto;
-  white-space: nowrap;
-}
-@media all and (max-width: 425px) {
-  .button--big-in-small {
-    width: 425px;
-    max-width: 100%;
-  }
-}
-
 .b-challenges-about {
   margin: 85px auto;
 }
@@ -4707,5 +4639,73 @@ html {
   }
   .b-weekly-news__heading {
     font-size: 34px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid #f28b11;
+  border-radius: 1px;
+  background-color: #f28b11;
+  color: #ffffff;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.1s;
+}
+.button:hover,
+.button:focus {
+  border-color: #f28b11;
+  background-color: #f28b11;
+}
+.button--c-transparent {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.button--c-transparent:hover,
+.button--c-transparent:focus {
+  border-color: #f28b11;
+  background-color: #f28b11;
+}
+.button--white {
+  background-color: transparent;
+  border: 1px solid #90a4ae;
+  padding: 7px 15px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.button--white:hover,
+.button--white:focus {
+  border-color: #f28b11;
+  background-color: #f28b11;
+}
+.button.is-disabled,
+.button:disabled {
+  background-color: #999999;
+  border-color: #656565;
+  cursor: not-allowed;
+}
+.button--small {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.button__text {
+  margin: 0 auto;
+  white-space: nowrap;
+}
+@media all and (max-width: 425px) {
+  .button--big-in-small {
+    width: 425px;
+    max-width: 100%;
   }
 }
