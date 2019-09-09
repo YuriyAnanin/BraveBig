@@ -1,0 +1,220 @@
+@import "../../core/variables";
+
+.b-invitations-item {
+  width: 260px;
+
+  padding: 15px 20px 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  border: 1px solid #b0bec5;
+  background-color: #eceff1;
+
+  position: relative;
+
+  &:hover {
+    border-color: #78909c;
+
+    .b-invitations__close {
+      display: block;
+    }
+
+    .b-invitations-item__controls {
+      .b-invitations-item__delete {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.b-invitations__close {
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  box-sizing: border-box;
+  padding: 0;
+
+  outline: none;
+  cursor: pointer;
+
+  display: none;
+
+  background-color: transparent;
+  border: none;
+
+  background-image: url('../../assets/img/icon-close.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.b-invitations-item_style_image {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.b-invitations-item__header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.b-invitations-item__avatar {
+  width: 70px;
+  height: 70px;
+
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-top: 5px;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.b-invitations-item__information {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-invitations-item__link {
+  color: #3f4551;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  margin-bottom: 2px;
+
+  &:hover {
+    color: #646d80;
+  }
+}
+
+.b-invitations-item__profile-link{
+  color: #90a4ae;
+  font-size: 14px;
+  margin-top: -5px;
+
+  &:hover{
+    color: #f28b11;
+  }
+}
+
+.b-invitations-item__profile-link-wrap{
+  margin-top: -1px;
+}
+
+.b-invitations-item__prefix {
+  color: #90a4ae;
+  font-size: 14px;
+}
+
+.b-invitations-item__content {
+  color: #3f4551;
+  font-size: 24px;
+  line-height: 120%;
+
+  overflow: hidden;
+
+  margin: 20px 0;
+}
+
+.b-invitations-item__controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.b-invitations-item__date {
+  color: #90a4ae;
+  font-size: 14px;
+}
+
+.b-invitations-item__delete {
+  color: #90a4ae;
+  font-size: 14px;
+
+  display: none;
+
+  &:hover,
+  &:focus {
+    color: @accent;
+  }
+}
+
+.b-invitations-item__btn-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-invitations-item__btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:  #3f4551;
+}
+
+.b-invitations-item__image {
+  display: none;
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.b-invitations-item--delayed{
+  background-color: #ffffff;
+}
+
+.b-invitations-item__prefix--red{
+  color: #c23030;
+  margin-bottom: 18px;
+}
+
+.b-invitations-item__text{
+  color: #c23030;
+}
+
+.b-invitations-item__btn-gray{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #90a4ae;
+}
+
+@media (max-width: 576px) {
+  .b-invitations-item {
+    width: 100%;
+  }
+
+  .b-invitations-item__content {
+    overflow: hidden;
+  }
+
+  .b-invitations-item_style_image {
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+    background-position: -100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  .b-invitations-item__image {
+    display: block;
+  }
+}
