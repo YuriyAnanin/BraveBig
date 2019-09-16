@@ -3520,10 +3520,8 @@ html {
   transform: translateY(0);
 }
 .b-profile-avatar__item {
-  width: 360px;
-  height: 360px;
-  object-fit: cover;
-  object-position: center;
+  margin: 0 auto;
+  width: 100%;
 }
 .b-profile-avatar__item-add {
   position: absolute;
@@ -3611,7 +3609,7 @@ html {
 }
 @media (max-width: 992px) {
   .b-profile-avatar {
-    height: 360px;
+    height: 300px;
   }
   .b-profile-avatar__wrapper {
     max-width: 300px;
@@ -3628,14 +3626,10 @@ html {
   }
   .b-profile-avatar {
     width: 100%;
-    height: 100%;
+    height: 360px;
     top: 100px;
     left: 0;
     right: 0;
-  }
-  .b-profile-avatar__item {
-    max-width: 300px;
-    max-height: 300px;
   }
   .b-profile-avatar .b-container {
     padding: 0;
@@ -3646,15 +3640,11 @@ html {
 }
 @media (max-width: 768px) {
   .b-profile-avatar {
-    height: 360px;
+    height: 300px;
   }
   .b-profile-avatar .b-container {
     max-width: 100%;
     height: auto;
-  }
-  .b-profile-avatar__item {
-    max-width: 360px;
-    max-height: 360px;
   }
   .b-profile-avatar .slick-list {
     height: 100%;
@@ -3665,12 +3655,12 @@ html {
   .b-profile-avatar {
     top: 80px;
     width: 100%;
-    height: 360px;
+    height: 300px;
   }
   .b-profile-avatar__wrapper {
     max-width: none;
     max-height: none;
-    height: 360px;
+    height: 300px;
   }
   .b-profile-avatar__slider {
     max-height: none;
@@ -4312,6 +4302,9 @@ html {
   }
   .b-profile-avatar__wrapper .slick-slide {
     text-align: center;
+  }
+  .b-profile-avatar__wrapper img {
+    width: auto!important;
   }
 }
 
