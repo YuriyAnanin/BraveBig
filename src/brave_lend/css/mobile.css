@@ -951,7 +951,7 @@
 		        align-items : flex-end;
 	}
 }
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
 	.mobile-menu .header__authorization {
 		width : 100%;
 		display : -webkit-box;
@@ -1009,7 +1009,7 @@
 	.container {
 		max-width : 100%;
 	}
-}
+}*/
 @media all and (max-width: 1280px) {
 	.layout-bg {
 		display : none;
