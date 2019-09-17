@@ -1,0 +1,15 @@
+crops/*
+features/*
+placeholders/*
+
+
+*.jpeg
+*.jpg
+*.png
+*.svg
+*.gif
+*.PNG
+*.SVG
+*.GIF
+*.JPG
+*.JPEG
