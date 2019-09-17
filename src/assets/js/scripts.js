@@ -1,7 +1,6 @@
 $(function() {
     $('.b-cities-list__data').select2({});
 });
-
 $(function() {
     $('.b-header__hamburger').click(function () {
         $(this).toggleClass('b-header__hamburger_is-active_true');
@@ -9,7 +8,6 @@ $(function() {
         $('.b-mobile-menu').toggleClass('b-mobile-menu_is-active_true');
     });
 });
-
 $(function() {
    $('.b-input-wrapper__submit').on('click', function (event) {
        event.preventDefault();
