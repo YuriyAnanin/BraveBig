@@ -32,6 +32,7 @@ $(function () {
         });
     }
 });
+
 $(document).ready(function(){
     $('.js_thank_link').magnificPopup({
         type: 'inline',
@@ -39,6 +40,17 @@ $(document).ready(function(){
         callbacks: {
             beforeOpen: function() {
                 this.st.mainClass ='mfp-zoom-in';
+            }
+        },
+        midClick: true
+    });
+
+    $('.js_popup_open').magnificPopup({
+        type: 'inline',
+        removalDelay: 300,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = 'mfp-zoom-in';
             }
         },
         midClick: true

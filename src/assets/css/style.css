@@ -2275,7 +2275,6 @@ html {
 #b-popup-register-friend .b-popup-register-friend__form .b-popup-register-friend__button {
   padding: 0 20px;
   display: table;
-  margin-left: auto;
   font-size: 18px;
   text-transform: none;
   font-weight: normal;
@@ -2502,9 +2501,6 @@ html {
   min-height: 140px;
 }
 @media (max-width: 768px) {
-  #b-popup-person-progress {
-    padding: 50px 20px;
-  }
   #b-popup-person-progress:after {
     display: none;
   }
@@ -2534,9 +2530,6 @@ html {
   .b-popup_theme_normal:after {
     display: none;
   }
-  .b-popup_theme_normal {
-    padding: 50px 20px;
-  }
   .b-popup-grid__row {
     flex-direction: column;
   }
@@ -2545,9 +2538,6 @@ html {
   }
   #b-popup-register-friend:after {
     display: none;
-  }
-  #b-popup-register-friend {
-    padding: 50px 20px;
   }
   #b-popup-register-friend .b-popup-register-friend__form .b-popup-register-friend__table:first-child:after {
     left: 0;
@@ -2558,9 +2548,6 @@ html {
   }
   #b-popup-register:after {
     display: none;
-  }
-  #b-popup-register {
-    padding: 50px 20px;
   }
   #b-popup-register .b-popup-register__form .b-popup-register__footer {
     flex-direction: column;
@@ -2575,6 +2562,9 @@ html {
 @media all and (max-width: 360px) {
   #b-popup-register .b-popup-register__form .b-popup-register__table .b-popup-register__table-content {
     width: auto;
+  }
+  #b-popup-register-friend {
+    padding: 0 30px;
   }
 }
 @media all and (max-width: 610px) {
