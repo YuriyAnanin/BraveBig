@@ -120,6 +120,14 @@ html {
   padding: 0 15px;
   box-sizing: content-box;
 }
+.b-container--challenges {
+  max-width: 1210px;
+}
+@media (max-width: 1240px) {
+  .b-container--challenges {
+    max-width: 1150px;
+  }
+}
 @media (max-width: 1200px) {
   .b-container {
     max-width: 960px;
@@ -190,6 +198,88 @@ html {
   background: linear-gradient(to right, rgba(242, 139, 17, 0.25), rgba(242, 139, 17, 0.25) 100%) repeat-x 0 100% / 10px 1px;
 }
 
+
+.b-challenges {
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.b-challenges__heading {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  margin-left: 40.5px;
+}
+.b-challenges__grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.b-challenges-item {
+  width: 160px;
+  outline: none;
+  margin: 15px 41px;
+  text-decoration: none;
+}
+.b-challenges-item:hover .b-challenges-item__heading {
+  color: #f28b11;
+}
+.b-challenges-item__icon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.b-challenges-item__heading {
+  color: #3f4551;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.15s ease;
+}
+.b-challenges-item__meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.b-challenges-item__meta-item {
+  color: #999999;
+  font-size: 14px;
+}
+.b-challenges-item__meta-item_color_red {
+  color: #cc3333;
+}
+@media all and (max-width: 1240px) {
+  .b-challenges__heading {
+    margin-left: 30.5px;
+  }
+  .b-challenges-item {
+    margin: 15px 35px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .b-challenges__grid {
+    margin-left: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .b-challenges__grid {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .b-challenges__heading {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
 
 .button {
   display: flex;
