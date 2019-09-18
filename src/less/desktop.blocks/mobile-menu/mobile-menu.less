@@ -30,7 +30,7 @@
   }
 }
 
-.b-mobile-menu__item {
+.b-mobile-menu__item{
   background-color: #13191c;
   height: 80px;
 
@@ -45,6 +45,12 @@
     .b-mobile-menu__link {
       color: @accent;
       border-color: @accent;
+    }
+  }
+  &--is-visible{
+    display: none;
+    &.is-visible{
+      display: flex;
     }
   }
 }

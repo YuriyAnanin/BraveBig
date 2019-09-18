@@ -2332,6 +2332,14 @@ img.mfp-img{
   border-color: #f28b11;
 }
 
+.b-mobile-menu__item--is-visible{
+  display: none;
+}
+
+.b-mobile-menu__item--is-visible.is-visible{
+  display: block;
+}
+
 .b-mobile-menu__link{
   width: 100%;
   height: calc(100% + 2px);
