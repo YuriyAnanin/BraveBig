@@ -123,8 +123,20 @@ html {
 .b-container--challenges {
   max-width: 1210px;
 }
+.b-container--achievements {
+  max-width: 1210px;
+}
+.b-container--sparrings {
+  max-width: 1210px;
+}
 @media (max-width: 1240px) {
   .b-container--challenges {
+    max-width: 1150px;
+  }
+  .b-container--achievements {
+    max-width: 1150px;
+  }
+  .b-container--sparrings {
     max-width: 1150px;
   }
 }
@@ -199,6 +211,111 @@ html {
 }
 
 
+.achievements {
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.achievements__heading {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  margin-left: 40.5px;
+}
+.achievements__back-block {
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+.achievements__back {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.achievements__back--arrow {
+  font-size: 20px;
+  position: absolute;
+  left: -3px;
+  top: -7px;
+}
+.achievements__grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.achievements-item {
+  width: 160px;
+  outline: none;
+  margin: 15px 41px;
+  text-decoration: none;
+}
+.achievements-item:hover .achievements-item__heading {
+  color: #f28b11;
+}
+.achievements-item__icon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.achievements-item__heading {
+  color: #3f4551;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.15s ease;
+}
+.achievements-item__meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.achievements-item__meta-item {
+  color: #999999;
+  font-size: 14px;
+}
+.achievements-item__meta-item_color_red {
+  color: #cc3333;
+}
+@media all and (max-width: 1240px) {
+  .achievements__heading {
+    margin-left: 30.5px;
+  }
+  .achievements-item {
+    margin: 15px 35px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .achievements__grid {
+    margin-left: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .achievements__grid {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .achievements__heading {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .achievements__back-block {
+    padding-bottom: 10px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .b-challenges {
   margin: 0 auto;
   box-sizing: border-box;
@@ -211,6 +328,48 @@ html {
   position: relative;
   top: -5px;
   margin-left: 40.5px;
+}
+.b-challenges__heading-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.b-challenges__heading-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px 22px;
+  padding-top: 7px;
+}
+.b-challenges__heading-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 15px;
+  padding: 5px 8px;
+  color: #3f4551;
+}
+.b-challenges__heading-btn.is-active {
+  color: #fff;
+  background-color: #3f4551;
+  border-radius: 3px;
+}
+.b-challenges__back-block {
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+.b-challenges__back {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.b-challenges__back--arrow {
+  font-size: 20px;
+  position: absolute;
+  left: -3px;
+  top: -7px;
 }
 .b-challenges__grid {
   display: flex;
@@ -269,6 +428,15 @@ html {
     margin-left: 15px;
   }
 }
+@media all and (max-width: 769px) {
+  .b-challenges__heading-btn-wrap {
+    margin-top: 10px;
+  }
+  .b-challenges__heading-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media all and (max-width: 768px) {
   .b-challenges__grid {
     justify-content: center;
@@ -278,6 +446,25 @@ html {
     text-align: center;
     margin-left: 0;
     margin-top: 30px;
+  }
+  .b-challenges__back-block {
+    padding-bottom: 10px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 450px) {
+  .b-challenges__heading-btn {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+  .b-challenges__heading-btn.is-active {
+    color: #fff;
+    background-color: #3f4551;
+    padding: 0 8px;
+    border-radius: 3px;
+    line-height: 23px;
   }
 }
 
@@ -4989,6 +5176,111 @@ html {
   position: relative;
   top: 2px;
   background-image: url('../../assets/img/social-icon.png');
+}
+
+.sparrings {
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.sparrings__heading {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  margin-left: 40.5px;
+}
+.sparrings__back-block {
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+.sparrings__back {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.sparrings__back--arrow {
+  font-size: 20px;
+  position: absolute;
+  left: -3px;
+  top: -7px;
+}
+.sparrings__grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.sparrings-item {
+  width: 160px;
+  outline: none;
+  margin: 15px 41px;
+  text-decoration: none;
+}
+.sparrings-item:hover .sparrings-item__heading {
+  color: #f28b11;
+}
+.sparrings-item__icon {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.sparrings-item__heading {
+  color: #3f4551;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.15s ease;
+}
+.sparrings-item__meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sparrings-item__meta-item {
+  color: #999999;
+  font-size: 14px;
+}
+.sparrings-item__meta-item_color_red {
+  color: #cc3333;
+}
+@media all and (max-width: 1240px) {
+  .sparrings__heading {
+    margin-left: 30.5px;
+  }
+  .sparrings-item {
+    margin: 15px 35px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .sparrings__grid {
+    margin-left: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .sparrings__grid {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .sparrings__heading {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .sparrings__back-block {
+    padding-bottom: 10px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .b-weekly-item {
