@@ -2044,7 +2044,7 @@ html {
   }
 }
 @media all and (max-width: 991px) {
-  .b-invitations__grid {
+  .b-message__grid {
     justify-content: center;
     padding-left: 0;
   }
