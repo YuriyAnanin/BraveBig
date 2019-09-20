@@ -1773,7 +1773,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .b-invitations__heading-btn-wrap {
   display: flex;
@@ -1797,9 +1797,10 @@ html {
 }
 .b-invitations__grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 .b-invitations-item {
   margin-bottom: 30px;
@@ -1807,6 +1808,12 @@ html {
 @media all and (max-width: 993px) {
   .b-invitations {
     margin: 30px auto 0;
+  }
+}
+@media all and (max-width: 991px) {
+  .b-invitations__grid {
+    justify-content: center;
+    padding-left: 0;
   }
 }
 @media all and (max-width: 769px) {
@@ -1834,6 +1841,7 @@ html {
 
 .b-invitations-item {
   width: 260px;
+  margin: 15px 11px;
   padding: 15px 20px 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -1979,6 +1987,11 @@ html {
   cursor: pointer;
   color: #90a4ae;
 }
+@media (max-width: 1200px) {
+  .b-invitations-item {
+    margin: 15px 27px;
+  }
+}
 @media (max-width: 576px) {
   .b-invitations-item {
     width: 100%;
@@ -2018,8 +2031,9 @@ html {
 }
 .b-message__grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 .b-message-item {
   margin-bottom: 30px;
@@ -2027,6 +2041,12 @@ html {
 @media all and (max-width: 993px) {
   .b-message {
     margin: 30px auto 0;
+  }
+}
+@media all and (max-width: 991px) {
+  .b-invitations__grid {
+    justify-content: center;
+    padding-left: 0;
   }
 }
 
@@ -2102,7 +2122,8 @@ html {
 .b-message-item {
   width: 260px;
   height: 240px;
-  padding: 20px 20px 10px 20px;
+  margin: 15px 11px;
+  padding: 15px 20px 10px 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -2210,6 +2231,11 @@ html {
   content: "";
   display: table;
   clear: both;
+}
+@media (max-width: 1200px) {
+  .b-message-item {
+    margin: 15px 27px;
+  }
 }
 @media (max-width: 576px) {
   .b-message-item {

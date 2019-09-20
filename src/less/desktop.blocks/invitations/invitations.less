@@ -8,7 +8,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .b-invitations__heading {
@@ -40,9 +40,10 @@
 
 .b-invitations__grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 
 .b-invitations-item {
@@ -52,6 +53,13 @@
 @media all and (max-width: 993px){
   .b-invitations {
     margin: 30px auto 0;
+  }
+}
+
+@media all and (max-width: 991px){
+  .b-invitations__grid{
+    justify-content: center;
+    padding-left: 0;
   }
 }
 
