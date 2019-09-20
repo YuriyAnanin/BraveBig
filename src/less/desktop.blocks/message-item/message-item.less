@@ -2,14 +2,14 @@
 
 .b-message-item {
   width: 260px;
-  height: 240px;
 
   margin: 15px 11px;
   padding: 15px 20px 10px 20px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
+  align-items: stretch;
 
   box-sizing: border-box;
 
@@ -66,6 +66,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
+  height: 240px;
 }
 
 .b-message-item__header {
@@ -113,15 +114,16 @@
   font-size: 16px;
   line-height: 120%;
 
-  max-height: 76px;
+  word-break: break-word;
   overflow: hidden;
 
-  margin: 20px 0 auto 0;
+  margin: 22px 0;
 }
 
 .b-message-item__controls {
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .b-message-item__date {
@@ -161,11 +163,9 @@
 @media (max-width: 576px) {
   .b-message-item {
     width: 100%;
-    height: 210px;
   }
 
   .b-message-item__content {
-    max-height: 38px;
     overflow: hidden;
   }
 
