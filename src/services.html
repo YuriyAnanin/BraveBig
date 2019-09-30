@@ -190,6 +190,7 @@
         <a style="margin-right: 10px" href="#offer_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Записаться</a>
         <a style="margin-right: 10px" href="#cooperation_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Открыть зал</a>
         <a style="margin-right: 10px" href="#details_form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Детали спаринга</a>
+        <a style="margin-right: 10px" href="#socials-form" class="b-link b-inline-popup js_first_fight" data-effect="mfp-move-horizontal">Ваши соцсети</a>
     </div>
 
     <footer class="b-footer">
@@ -664,6 +665,51 @@
             <div class="b-popup__grid">
                 <span class="b-popup__info">На указанную почту мы вышлем <br />первый вызов и доступ в профиль, <br />где вы сможете получить рейтинг.</span>
                 <input type="submit" class="b-button b-button_size_medium b-button_theme_popup" value="Создать профиль">
+            </div>
+        </form>
+    </div>
+
+<!-- ПОПАП ВАШИ СОЦСЕТИ-->
+    <div class="popup mfp-with-anim mfp-hide js_form_id" id="socials-form">
+        <div class="popup__top-cover"></div>
+        <div class="popup__bottom-cover"></div>
+        <div class="popup__successfully-wrap">
+            <div class="popup__successfully-title">Заявка принята!</div>
+            <p class="popup__successfully-text">Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+        <h4 class="popup__title">Ваши соцсети</h4>
+        <form class="popup__form socials-form">
+            <div class="socials-form__input-wrap">
+                <label for="socials-form_instagram" class="socials-form__input-label">Инстаграм</label>
+                <div class="socials-form__validation-wrap socials-input">
+                    <input type="text" name="instagram" id="socials-form_instagram" required class="socials-input__field js_form_input">
+                </div>
+            </div>
+
+            <div class="socials-form__input-wrap">
+                <label for="socials-form_facebook" class="socials-form__input-label">Фейсбук</label>
+                <div class="socials-form__validation-wrap socials-input">
+                    <input type="email" class="socials-input__field js_form_input" id="socials-form_facebook" name=facebook" required>
+                </div>
+            </div>
+
+            <div class="socials-form__input-wrap">
+                <label for="socials-form_vk" class="socials-form__input-label">ВКонтакте</label>
+                <div class="socials-form__validation-wrap socials-input">
+                    <input type="email" class="socials-input__field js_form_input" id="socials-form_vk" name=facebook" required>
+                </div>
+            </div>
+
+            <div class="socials-form__input-wrap">
+                <label for="socials-form_site" class="socials-form__input-label">Сайт</label>
+                <div class="socials-form__validation-wrap socials-input">
+                    <input type="email" class="socials-input__field js_form_input" id="socials-form_site" name=facebook" required>
+                </div>
+            </div>
+
+            <div class="socials-form__input-wrap socials-form__input-wrap--save">
+                <span class="b-popup__info">Добавьте ссылки на Ваши соцсети.<br>Ссылки будут доступны посетителям<br>Вашего профиля</span>
+                <input type="submit" value="Сохранить" class="socials-form__btn button button--orange js_send_form">
             </div>
         </form>
     </div>
