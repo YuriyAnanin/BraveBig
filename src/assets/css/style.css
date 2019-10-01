@@ -250,7 +250,7 @@ html {
 }
 .achievements__grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
@@ -385,7 +385,7 @@ html {
 }
 .b-challenges__grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
@@ -5427,7 +5427,7 @@ html {
 }
 .sparrings__grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
